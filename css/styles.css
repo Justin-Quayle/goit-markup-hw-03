@@ -58,8 +58,8 @@ ul {
   color: inherit;
   text-decoration: none;
   display: inline-block;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .weblogo {
@@ -82,8 +82,8 @@ ul {
 .nav-list,
 .info {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-list {
@@ -118,6 +118,7 @@ ul {
 .hero {
   color: var(--prime-bcg);
   background-color: var(--second-bcg);
+  text-align: center;
 }
 
 .main-title {
@@ -132,14 +133,12 @@ ul {
 }
 
 .hero .button {
+  display: inline-block;
   min-width: 200px;
   padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 200px;
   letter-spacing: 0.06em;
   color: var(--prime-bcg);
@@ -151,6 +150,8 @@ ul {
 .features {
   list-style: none;
   letter-spacing: 0.03em;
+  display: flex;
+  padding-top: 94px;
 }
 
 .features .title {
@@ -162,8 +163,18 @@ ul {
 
 .features .item {
   font-weight: normal;
+  font-size: 14px;
   line-height: 1.71;
   color: var(--small-text);
+  margin-top: 10px;
+}
+
+.features-section .list {
+  width: 270px;
+}
+
+.features-section .list + .list {
+  margin-left: 30px;
 }
 
 .work .title,
@@ -174,16 +185,37 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
   padding-top: 94px;
+  margin-bottom: 50px;
 }
 
-.work .item {
-  display: inline-block;
-  margin-top: 50px;
+.work .list {
+  display: flex;
   padding-bottom: 94px;
 }
 
+.work .item + .item {
+  margin-left: 30px;
+}
+
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--special-bcg);
+}
+
+.team .list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.member {
+  background-color: var(--prime-bcg);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.member,
+.name {
+  text-align: center;
 }
 
 .name {
@@ -191,6 +223,12 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team .member + .member {
+  margin-left: 30px;
 }
 
 .description {
@@ -198,6 +236,7 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--small-text);
+  padding-bottom: 30px;
 }
 
 /* Герой portfolio.html */
@@ -244,6 +283,19 @@ ul {
 .footer {
   color: var(--prime-bcg);
   background-color: var(--second-bcg);
+}
+
+.container .logo {
+  /* padding-top: 60px; */
+  /* margin-bottom: 20px; */
+}
+
+.footer-info {
+  margin-top: 9px;
+}
+
+.footer-info:last-child {
+  padding-bottom: 60px;
 }
 
 .contacts .list {
