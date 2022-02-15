@@ -6,6 +6,7 @@
 /* Акцент #2196F3; */
 /* Мелкий текст #757575; */
 /* Футер текст rgba(255, 255, 255, 0.6); */
+/* Бордер #EEEEEE */
 
 :root {
   --prime-bcg: #ffffff;
@@ -15,6 +16,7 @@
   --small-text: #757575;
   --accent: #2196f3;
   --footer-text: rgba(255, 255, 255, 0.6);
+  --border: #EEEEEE
 }
 
 body {
@@ -33,20 +35,23 @@ ul {
   margin: 0;
 }
 
+img {
+  display: block, 
+  max-width: 100%, 
+  height: auto
+}
+
 /* Шапка сайта */
 
 .header {
   background-color: var(--prime-bcg);
+  border: 1px solid var(--border)
 }
 
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.container-main {
-  height: 600px;
 }
 
 .logo {
@@ -223,7 +228,7 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-top: 30px;
+  padding-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -242,6 +247,13 @@ ul {
 /* Герой portfolio.html */
 
 .filter {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.filter-item {
   list-style: none;
 }
 
@@ -250,11 +262,18 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  text-decoration: none;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text);
   background: var(--special-bcg);
   border-radius: 4px;
+  padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter .filter-item + .filter-item {
+  margin-left: 8px;
 }
 
 .btn:hover,
@@ -269,13 +288,38 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  padding-left: 24px;
 }
 
-.item {
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.works .list {
+  background-color: var(--prime-bcg);
+  border: 1px solid var(--border);
+  margin: 15px;
+} 
+
+.works .list:nth-child(3n) {
+  margin-right: 0;
+}
+
+.works .item {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--small-text);
+  margin-top: 4px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+
+.filter-works {
+  padding-bottom: 94px;
 }
 
 /* Подвал */
@@ -285,9 +329,17 @@ ul {
   background-color: var(--second-bcg);
 }
 
-.container .logo {
-  /* padding-top: 60px; */
-  /* margin-bottom: 20px; */
+.footer-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 
 .footer-info {
