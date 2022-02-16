@@ -52,6 +52,7 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -124,6 +125,8 @@ img {
   color: var(--prime-bcg);
   background-color: var(--second-bcg);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .main-title {
@@ -134,7 +137,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-  padding-top: 200px;
 }
 
 .hero .button {
@@ -144,7 +146,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  margin-bottom: 200px;
   letter-spacing: 0.06em;
   color: var(--prime-bcg);
   background-color: var(--accent);
@@ -152,11 +153,14 @@ img {
   border-radius: 4px;
 }
 
+.features-section {
+  padding-top: 94px;
+}
+
 .features {
   list-style: none;
   letter-spacing: 0.03em;
   display: flex;
-  padding-top: 94px;
 }
 
 .features .title {
@@ -189,13 +193,16 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 94px;
   margin-bottom: 50px;
+}
+
+.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .work .list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .work .item + .item {
@@ -204,11 +211,12 @@ img {
 
 .team {
   background-color: var(--special-bcg);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team .list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .member {
@@ -228,7 +236,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -241,6 +248,10 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--small-text);
+}
+
+.member-card {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -249,8 +260,11 @@ img {
 .filter {
   display: flex;
   justify-content: center;
+}
+
+.filter-btn {
   padding-top: 94px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .filter-item {
@@ -288,14 +302,19 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
-  padding-left: 24px;
+  margin-bottom: 4px;
 }
 
 .works {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+}
+
+.works-card {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
 
 .works .list {
@@ -313,9 +332,6 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--small-text);
-  margin-top: 4px;
-  padding-left: 24px;
-  padding-bottom: 20px;
 }
 
 .filter-works {
